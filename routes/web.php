@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    $items = ['apple', 'banana', 'tomato'];
+    return view('welcome', ['items' => $items]);
 });
